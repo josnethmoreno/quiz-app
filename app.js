@@ -12,6 +12,7 @@ const renderPage = (ui, quiz) => {
     ui.showQuestion(quiz.getQuestionIndex().text);
     ui.showChoices(quiz.getQuestionIndex().choice, (button) => {
       quiz.guess(button.target.innerText);
+      console.log('Hola');
       renderPage(ui, quiz);
     });
   }
