@@ -4,6 +4,7 @@ import { questions } from '/data/question.js';
 import { Quiz } from '/models/Quiz.js';
 import { UI } from '/models/UI.js';
 
+
 const renderPage = (ui, quiz) => {
 
   if (quiz.isEnded()) {
@@ -13,13 +14,13 @@ const renderPage = (ui, quiz) => {
     ui.showQuestion(quiz.getQuestionIndex().text);
     ui.showChoices(quiz.getQuestionIndex().choice, (button) => {
       quiz.guess(button.target.innerText);
-      console.log('Hola');
       renderPage(ui, quiz);
     });
     ui.updateProgress(quiz.questionIndex, quiz.getQuestionsLength());
   }
 
 }
+
 
 function main(){
   const ui = new UI;
@@ -30,3 +31,12 @@ function main(){
 
 main()
 
+
+const getChoicesHeight = () => {
+  const choices = document.getElementById('choices');
+  const choicesStyle = window.getComputedStyle(choices);
+  const choicesHeight = choicesStyle.getPropertyValue('height');
+  return choicesHeight;
+}
+
+document.getElementById('choices').style.height = `${getChoicesHeight()}`;
