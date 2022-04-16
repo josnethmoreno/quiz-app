@@ -39,7 +39,7 @@ export const data = [
 			'Sí',
 			'No'
 		],
-		answer: 'Sí'
+		answer: 'No'
 	}
 
 ]
