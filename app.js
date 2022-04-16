@@ -8,7 +8,7 @@ import { UI } from '/models/UI.js';
 const renderPage = (ui, quiz) => {
 
   if (quiz.isEnded()) {
-    ui.showScore(quiz.score);
+    ui.showScore(quiz.getQuestionsLength(), quiz.score);
     ui.updateProgress(quiz.questionIndex, quiz.getQuestionsLength());
   } else {
     ui.showQuestion(quiz.getQuestionIndex().text);

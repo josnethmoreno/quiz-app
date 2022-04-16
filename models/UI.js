@@ -34,14 +34,12 @@ export class UI {
           ${messageScore}
         </div>
         <div class="choice-score-actions mt-5 text-center d-flex flex-column flex-md-row gap-2">
-          <button id="btnAcierto" class="btn btn-outline-warning">Ver aciertos!</button>
           <button id="btnReset" class="btn btn-outline-primary">Intentar de nuevo!</button>
-          <button id="btnMessage" class="btn btn-danger">Mensaje oculto</button>
         </div>
       </div>
 		`;
 
-		const btnAcierto = document.getElementById('btnAcierto');
+		const btnAcierto = document.getElementById('btnReset');
 		btnAcierto.addEventListener('click', () => {
 			location.reload();
 		})

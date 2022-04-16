@@ -1,38 +1,45 @@
-
 export const data = [
 
 	{
-		question : '¿Cuantos exoplanetas similares al planeta tiera se han descubierto?',
+		question : 'Los exoplanetas son...',
 		choices: [
-			'1000',
-			'2000',
-			'3000',
-			'4000'
+			'Planetas que se encuentran fuera de la orbita del planeta tierra',
+			'Planetas donde existe el H20',
+			'Planetas que se estan fuera de nuestro sistema solar',
+			'Planetas donde existen vida inteligente'
 		],
-		answer: '3000'
+		answer: 'Planetas que estan fuera de nuestro sistema solar'
 	},
 
 	{
-		question : '¿Cuantos exoplanetas similares al sol se han descubierto?',
+		question : '¿Cuantos exoplanetas se han descubierto hasta el día de hoy?',
 		choices: [
-			'5000',
-			'6000',
-			'7000',
-			'8000'
+			'+1200',
+			'+10000',
+			'+5000',
+			'+100000'
 		],
-		answer: '1000'
+		answer: '+5000'
 	},
 
 	{
-		question : '¿Cuantos exoplanetas similares a la luna se han descubierto?',
+		question : '¿Quién descrubrio el primer exoplaneta?',
 		choices: [
-			'9000',
-			'10000',
-			'11000',
-			'12000'
+			'Stephen Hawking',
+			'Isaac Newton',
+			'Albert Einsten',
+			'Michel Mayor y Didier Queloz'
 		],
-		answer: '2000'
+		answer: 'Michel Mayor y Didier Queloz'
+	},
+
+	{
+		question : 'Ahora una pregunta interesante... ¿Cree usted que estamos solos en el universo?',
+		choices: [
+			'Sí',
+			'No'
+		],
+		answer: 'Sí'
 	}
 
 ]
-
