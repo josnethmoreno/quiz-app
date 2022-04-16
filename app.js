@@ -8,6 +8,7 @@ const renderPage = (ui, quiz) => {
 
   if (quiz.isEnded()) {
     ui.showScore(quiz.score);
+    ui.updateProgress(quiz.questionIndex, quiz.getQuestionsLength());
   } else {
     ui.showQuestion(quiz.getQuestionIndex().text);
     ui.showChoices(quiz.getQuestionIndex().choice, (button) => {
@@ -15,6 +16,7 @@ const renderPage = (ui, quiz) => {
       console.log('Hola');
       renderPage(ui, quiz);
     });
+    ui.updateProgress(quiz.questionIndex, quiz.getQuestionsLength());
   }
 
 }

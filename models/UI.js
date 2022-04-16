@@ -24,4 +24,14 @@ export class UI {
 		question.innerText = `Tu puntuación ha sido`;
 		choiceDiv.innerHTML = `${score}`;
 	}
+
+	updateProgress(questionIndex, questionsLength){
+		const progressTotal = questionsLength;
+		const progressActual = questionIndex;
+		const progressPorcentage = Math.floor(questionIndex * 100 / questionsLength);
+
+		const progressBar = document.getElementById('progressBar');
+		progressBar.style.width = `${progressPorcentage}%`;
+		progressBar.innerText = `${progressPorcentage}%`;
+	}
 }

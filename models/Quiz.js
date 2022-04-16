@@ -11,6 +11,10 @@ export class Quiz {
 		return this.questions[this.questionIndex];
 	}
 
+	getQuestionsLength(){
+		return this.questions.length;
+	}
+
 	isEnded(){
 		return this.questions.length === this.questionIndex;
 	}
