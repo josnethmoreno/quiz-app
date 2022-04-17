@@ -5,10 +5,10 @@ export const data = [
 		choices: [
 			'Planetas que se encuentran fuera de la orbita del planeta tierra',
 			'Planetas donde existe el H20',
-			'Planetas que se estan fuera de nuestro sistema solar',
+			'Planetas que se encuentran fuera de nuestro sistema solar',
 			'Planetas donde existen vida inteligente'
 		],
-		answer: 'Planetas que estan fuera de nuestro sistema solar'
+		answer: 'Planetas que se encuentran fuera de nuestro sistema solar'
 	},
 
 	{
